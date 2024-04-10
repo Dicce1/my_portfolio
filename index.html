@@ -13,10 +13,12 @@
 
 <body>
     <header>
-        <!--Navbar-->
+        <!--Start-Navbar-->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand me-auto logo" href="#">Logo</Mateus></a>
+                <a class="navbar-brand me-auto logo" href="#">
+                    <img src="Assets/Image/logo-azul-sem-fundo.svg" style="height:100px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +26,9 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                        <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img  src="Assets/Image/logo-azul-sem-fundo.svg" style="height:100px;">
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -51,9 +55,9 @@
         </nav>
         <!--End-Navbar-->
     </header>
-
+    <!--Top-main-section-->
     <main>
-        <section class="about-section">
+        <section class="top-section">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -70,16 +74,19 @@
                 </div>
             </div>
         </section>
+        <!--End-Top-main-section-->
 
-        <!--About-me-section-->
+        <!--Start-About-me-section-->
         <section>
-            <div class="container about-container d-flex justify-content-center align-items-center">
+            <div class="container-fluid about-container d-flex justify-content-center align-items-center" style="height: 700px; background-color: #242424;">
                 <div class="row">
-                    <div class="col">Imagem</div>
+                    <div class="col">
+                        <img src="Assets/Image/logo-sem-fundo.svg">
+                    </div>
                     <div class="col">
                         <h1 class="text-white">Sobre mim</h1>
                         <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            Lorem Ipsum has been the industry's standard </br>dummy text ever since the 1500s, when an
                             unknown printer took a galley</p>
                     </div>
                 </div>
@@ -87,8 +94,10 @@
         </section>
         <!--End-About-me-section-->
 
+        <!--Start-my-spec-->
+    
         <section>
-            <div class="container">
+            <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 700px;">
                 <div class="row">
                     <div class="col spec-text">
                         <h1>Minhas especializações</h1>
@@ -126,22 +135,76 @@
                 </div>
             </div>
         </section>
+        <!--End-my-spec-->
+
+        
+
+        <!--Start-my-services-->
+        <section>
+            
+
+            <div class="container-fluid" style="background-color: #faf9f7; height: 700px;">
+                <h1>Meus serviços</h1>
+            </div>
+
+
+        </section>
+
+
+        <!--End-my-services-->
+
+        <!--Start-carousel-->
+        <section>
+
+            <div class="container-fluid" style="height: 700px; background-color: #e88f1a;">
+                <h1>Meus ultimos projetos</h1>
+            </div>
 
 
 
+        </section>
+        <!--End-carousel-->
 
+        <!--Start-footer-->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>Mateus<span>Oliveira</span></h3>
 
+                <P class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                </P>
 
+                <p class="footer-company-name">Copyright © 2024 <strong>Mateus Oliveira </strong>All rights reserved</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <img src="Assets/Image/telephone.svg">
+                    <p>+55 84 98607-7079</p>
+                </div>
+                <div>
+                    <img src="Assets/Image/envelope.svg">
+                    <p><a href="#">contato@teste.com</a></p>
+                </div>
+                <div>
+                    <img src="Assets/Image/geo-alt-fill.svg">
+                    <p>Brasil</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Sobre mim</span>
+                    <strong>Eu sou</strong> Desenvolvedor web bla bla bla
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/mateuscoliveira/"><img src="Assets/Image/linkedin.svg"></a>
+                    <a href="https://github.com/Dicce1"><img src="Assets/Image/github-icon.svg"></a>
+                </div>
+            </div>
+        </footer>
 
-
-
-
-
-
-
-
-
-
+        <!--End-footer-->
 
     </main>
     <!--Bootstrap-JS-->
