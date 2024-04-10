@@ -7,8 +7,6 @@ main {
     margin-top: 250px;
 }
 
-
-
 /*navbar-section*/
 .navbar {
     background-color:#fff;
@@ -55,20 +53,57 @@ main {
 }
 /*End-navbar-section*/
 
+
+/*Start-my-services*/
 .top-section {
-    padding-bottom:510px;
+    padding-bottom:200px;
 }
  
 .spec-text {
     padding-right: 400px;
 }
 
+.theme-text {
+    color: #247ba0;
+  } 
+  
+  .card-img-top {
+    height: 200px;
+    width: 100%;
+  }
+  .card {
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .card:hover {
+    color: white;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    background: #13293d;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  .card:hover::before {
+    left: 0%;
+    color: white;
+  }
+  .container-fluid {
+    background-image: url("blob-scene-haikei.svg");
+    background-position: center;
+    background-size: cover;
+  }
+/*End-my-services*/
 
 
 
-
-
-
+/*Start-footer*/
 
 footer {
     bottom: 0;
@@ -90,7 +125,6 @@ footer {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -112,7 +146,7 @@ footer {
 
 
 .footer-distributed h3 span {
-    color: #e0ac1c;
+    color: #006494;
 }
 
 /* Footer links */
@@ -142,7 +176,7 @@ footer {
     width: 35%;
 }
 
-.footer-distributed .footer-center i {
+.footer-distributed .footer-center img {
     background-color: #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -155,7 +189,7 @@ footer {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
+.footer-distributed .footer-center .envelope {
     font-size: 17px;
     line-height: 38px;
 }
@@ -175,7 +209,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-    color: #e0ac1c;
+    color: #006494;
     text-decoration: none;
     ;
 }
@@ -222,11 +256,11 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color: #13293d;
 }
 
 .footer-links a:hover {
-    color: #3F71EA;
+    color: #006494;
 }
 
 @media (max-width: 880px) {
@@ -240,3 +274,5 @@ footer {
         margin-left: 0;
     }
 }       
+
+/*End-footer*/
