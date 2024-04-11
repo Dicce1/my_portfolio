@@ -7,6 +7,15 @@
     padding: 0px;
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
+   
+}
+
+main {
+    margin-top: 100px;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 p {
@@ -59,8 +68,21 @@ p {
 }
 /*End-navbar-section*/
 
+/*Start-top-section*/
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+/*End-top-section*/
 
 /*Start-my-services*/
+#services {
+    overflow-y: hidden;
+}
+
 .top-section {
     padding-bottom:200px;
 }
