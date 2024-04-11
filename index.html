@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand me-auto logo" href="#">
-                    <img src="Assets/Image/logo-azul-sem-fundo.svg" style="height:100px;">
+                    <h3 style="color: black; padding-left: 21rem;">Mateus<span>Oliveira</span></h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -37,16 +37,19 @@
                                 <a class="nav-link active mx-lg-2" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Sobre</a>
+                                <a class="nav-link mx-lg-2" href="#about">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Habilidades</a>
+                                <a class="nav-link mx-lg-2" href="#spec">Habilidades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Projetos</a>
+                                <a class="nav-link mx-lg-2" href="#services">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Serviços</a>
+                                <a class="nav-link mx-lg-2" href="#projects">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#contact">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -58,20 +61,31 @@
     <!--Top-main-section-->
     <main>
         <section class="top-section">
-            <div class="container">
+            <div class="container d-flex justify-content-center align-items-center" style="height: 400px;">
                 <div class="row">
-                    <div class="col">
-                        <h1>Mateus Oliveira</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley</p>
-                            <div>
-                                <button type="button" class="btn btn-primary" style="background-color: #13293d;">Contate</button>
+                    
+                    <div class="col" style="margin-top: 100px;">
+                        <h1><strong>Desenvolvedor Front-end</strong></h1>
+                        <p>Olá, meu nome é Mateus e sou desenvolvedor web! Trabalho com a criação de Sites, Blogs e Lading pages intuitivas utilizando tecnologias como <strong><span>HTML, CSS, Javascript e Bootstrap.</span></strong></p>
+                            <div style="padding-top: 60px;">
+                                <button type="button" class="btn rounded-5" style="background-color: #13293d; height: 60px;"><a style="color: #fff; text-decoration: none;" href="#contact"><strong>Entre em contato</strong></a></button>                         
+                                <button type="button" class="btn rounded-5 mx-2" style="background-color: #E8F1F2; height: 60px;"><a style="color: #000; text-decoration: none;" href="#projects"><strong>Meus Projetos</strong></a></button>
+                            </div>
+                            
+                            <div class=" d-flex align-items-center gap-2 top-icons" style="padding-top: 60px;">
+                                <h5>Me siga: </h5>
+                                <div class="icon-item d-flex align-items-center justify-content-center">
+                                    <a href="#"><img src="Assets/Image/linkedin.svg"></a>
+                                </div>
+                                <div class="icon-item d-flex align-items-center justify-content-center">
+                                    <a href="#"><img src="Assets/Image/github-icon.svg"></a>
+                                </div>
+                                
                             </div>
                        
                     </div>
-                    <div class="col d-flex justify-content-center">
-                        <img src="Assets/Image/logo-azul-sem-fundo.svg">
+                    <div class="col">
+                        <img class="img-fluid" alt="" src="Assets/Image/Developer activity-bro.svg" style="height: 500px;">
                     </div>
                 </div>
             </div>
@@ -79,7 +93,7 @@
         <!--End-Top-main-section-->
 
         <!--Start-About-me-section-->
-        <section>
+        <section id="about">
             <div class="container-fluid about-container d-flex justify-content-center align-items-center" style="height: 700px; background-color: #13293d;">
                 <div class="row">
                     <div class="col">
@@ -98,11 +112,11 @@
 
         <!--Start-my-spec-->
     
-        <section style="padding-bottom: 100px;">
+        <section id="spec" style="padding-bottom: 100px;">
             <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 700px; ">
                 <div class="row">
                     <div class="col spec-text">
-                        <h1>Minhas especializações</h1>
+                        <h1>Minhas habilidades</h1>
                         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                             unknown printer took a galley</p>
                     </div>
@@ -142,7 +156,7 @@
         
 
         <!--Start-my-services-->
-        <section style="padding-bottom: 150px;">
+        <section id="services" style="padding-bottom: 150px;">
             <div class="container-fluid">
                 <h1 class="text-center mt-5 display-3 fw-bold">Meus <span class="theme-text">Serviços</span></h1>
                 <hr class="mx-auto mb-5 w-25">
@@ -219,7 +233,7 @@
         <!--End-my-services-->
 
         <!--Start-carousel-->
-        <section>
+        <section id="projects">
             <div class="container-fluid" style="height:700px; background-color: #E8F1F2;">
                 <h1 class="text-center">Meus ultimos projetos</h1>
             </div>
@@ -228,7 +242,7 @@
         <!--End-carousel-->
 
         <!--Start-footer-->
-        <footer class="footer-distributed">
+        <footer id="contact" class="footer-distributed">
             <div class="footer-left">
                 <h3>Mateus<span>Oliveira</span></h3>
 
@@ -270,9 +284,11 @@
 
     </main>
     <!--Bootstrap-JS-->
+    <script type="text;javascript" src="Assets/js/script.js"></script>
     <script type="text/javascript" src="Assets/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="Assets/js/bootstrap.bundle.min.js"></script>
     <!--End-Bootstrap-JS-->
+    
 </body>
 
 </html>

@@ -1,10 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
+
 main {
-    margin-top: 250px;
+    margin-top: 350px;
 }
 
 /*navbar-section*/
@@ -109,6 +116,8 @@ footer {
     bottom: 0;
 }
 
+
+
 @media (max-height:800px) {
     footer {
         position: static;
@@ -145,9 +154,10 @@ footer {
 }
 
 
-.footer-distributed h3 span {
+.footer-distributed, h3 span, .logo {
     color: #006494;
 }
+
 
 /* Footer links */
 
@@ -276,3 +286,21 @@ footer {
 }       
 
 /*End-footer*/
+
+
+@media only screen and (max-width: 1500px) {
+    .logo {
+        display: none;
+    }
+}
+
+.icon-item {
+    background-color: #cee8eb;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.icon-item img {
+    height: 22px;
+}
