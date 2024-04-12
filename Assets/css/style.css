@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 
 * {
@@ -14,12 +14,20 @@ main {
     margin-top: 100px;
 }
 
-html {
+
+
+html, body {
     overflow-x: hidden;
 }
 
 p {
     font-size: 20px;
+}
+
+
+.btn:hover {
+    background-color: #bed2d4 !important; /* Define a mesma cor do fundo quando não houver hover */
+    color: black !important; /* Define a cor do texto quando não houver hover */
 }
 
 /*navbar-section*/
@@ -334,3 +342,13 @@ footer {
     height: 22px;
 }
 
+.carousel-item-next.carousel-item-start,
+.carousel-item-prev.carousel-item-end {
+    transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transition: transform 0.5s ease;
+}
