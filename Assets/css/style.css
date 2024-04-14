@@ -352,3 +352,27 @@ footer {
 .carousel-item.active {
     transition: transform 0.5s ease;
 }
+
+
+
+/* Adicionando a animação slide-in-horizontal */
+@keyframes slideInHorizontal {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-horizontal {
+    animation: slideInHorizontal 1s forwards;
+}
+
+/* Adicionando a classe que oculta o conteúdo até que a animação seja aplicada */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
